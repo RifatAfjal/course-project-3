@@ -1,13 +1,14 @@
 /* === global style start === */
 .container {
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 
 .heading {
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
+/* button design */
 .buy-now-btn {
     position: relative;
     background-color: black;
@@ -52,6 +53,7 @@
 .buy-now-btn:hover::before {
     width: 150%;
 }
+/* button design end */
 
 
 .underline {
@@ -82,7 +84,6 @@
     padding: 15px 20px;
     background-color: coral;
 }
-
 
 
 /* for grid section */
@@ -117,4 +118,60 @@
         grid-template-columns: repeat(3,1fr);
     }
 
+}
+
+/* categories responsive part */
+.new-grid {
+    display: grid;
+    gap: 30px;
+}
+
+.grid-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.item {
+    margin-bottom: 15px;
+}
+
+.grid-inner-item {
+    display: grid;
+    gap: 30px;
+}
+
+/* for small and medius screen */
+@media screen and (min-width:540px){
+    .new-grid {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .grid-item {
+        justify-content: center;
+    }
+
+    .grid-inner-item {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+/* for large and extra large screen */
+@media screen and (min-width:992px){
+    .new-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+    .grid-item {
+        flex-direction: row;
+    }
+    
+    .item {
+        margin-right: 15px;
+        margin-bottom: 0;
+    }
+    
+    .grid-inner-item {
+        grid-template-columns: repeat(1,1fr);
+    }
 }
