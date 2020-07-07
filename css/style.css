@@ -57,8 +57,9 @@
 
 
 .underline {
-    height: 4px;
+    height: 5px;
     width: 70px;
+    border-radius: 50px;
     background-color: rgb(255, 20, 110);
     margin: 0 auto;
 }
@@ -132,11 +133,8 @@
     flex-direction: column;
 }
 
-.item {
-    margin-bottom: 15px;
-}
-
 .grid-inner-item {
+    margin-top: 15px;
     display: grid;
     gap: 30px;
 }
@@ -153,6 +151,7 @@
 
     .grid-inner-item {
         grid-template-columns: repeat(2,1fr);
+        gap: 30px;
     }
 }
 
@@ -167,8 +166,7 @@
     }
     
     .item {
-        margin-right: 15px;
-        margin-bottom: 0;
+        margin-right: 30px;
     }
     
     .grid-inner-item {
