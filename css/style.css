@@ -71,6 +71,11 @@
     margin-bottom: 200px;
 }
 
+.navbar-brand img {
+    width: 200px;
+    height: 60px;
+}
+
 #navigation .container {
     margin-bottom: 0;
 }
